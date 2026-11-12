@@ -15,6 +15,140 @@ const topics=[
 [['Which prehistoric monument stands on Salisbury Plain?','Hadrian’s Wall','Stonehenge','Tower of London','Edinburgh Castle',1],['In which year did the Roman conquest begin under Emperor Claudius?','AD 43','AD 1066','AD 1215','AD 410',0],['What was the Roman name for London?','Eboracum','Londinium','Aquae Sulis','Camulodunum',1],['Which Roman wall is in northern England?','Offa’s Dyke','Hadrian’s Wall','Antonine Canal','Severn Wall',1],['What is Aquae Sulis called today?','Bath','York','Chester','Canterbury',0],['Which groups settled in Britain after Roman rule weakened?','Angles, Saxons and Jutes','Aztecs and Incas','Normans and Franks','Greeks and Persians',0],['Where did the Vikings originate?','Scandinavia','North Africa','Caribbean','Central America',0],['What was the Danelaw?','A Roman province','An area under Viking law','A Welsh parliament','A Norman castle',1],['Which king resisted Viking attacks and ruled Wessex?','Alfred the Great','Richard III','Henry VII','James I',0],['What was a Roman road useful for?','Moving troops and goods','Horse racing only','Voting','Rail travel',0],['Which modern city was Roman Eboracum?','York','London','Bath','Exeter',0],['What did Roman towns commonly contain?','Roads and public buildings','Steam factories','Railway stations','Modern parliaments',0],['When did Roman control in Britain end?','Early fifth century','1066','1215','1485',0],['What evidence helps reveal prehistoric life?','Archaeological remains','Modern leaflets','Victorian newspapers','Digital cameras',0],['Which emperor invaded Britain in AD 43?','Claudius','Hadrian','Nero','Augustus',0],['What was one purpose of Hadrian’s Wall?','Defence and control of the frontier','A royal palace','A railway route','A canal for trade',0],['Which people travelled in longships from Scandinavia?','Vikings','Tudors','Normans','Romans',0],['What language developed from Anglo-Saxon speech?','Old English','French','Latin only','Greek',0],['Which period came first?','Roman Britain','Norman Britain','Tudor Britain','Victorian Britain',0],['What was one Roman legacy in Britain?','Road networks','The NHS','The steam engine','The Union Flag',0],['What does AD 43 mark in British history?','Start of Roman conquest','Norman Conquest','Civil War','Great Fire',0],['Which defensive wall was built by the Romans?','Hadrian’s Wall','Great Wall','Offa’s Dyke','Antonine Canal',0],['Which was a Roman settlement in modern Somerset?','Bath','Cardiff','Belfast','Dover',0],['Why do historians study artefacts?','To understand past people and societies','To choose MPs','To set taxes','To run courts',0]],
 [['What principle is associated with Magna Carta?','The monarch is subject to the law','Only nobles may vote','The army chooses the king','Parliament meets daily',0],['In which year was Magna Carta sealed?','1066','1215','1485','1689',1],['Which king agreed to Magna Carta?','Henry VIII','King John','Edward I','Richard I',1],['What was the Black Death?','A devastating plague','A civil war','A religious reform','A royal tax',0],['Which two houses fought in the Wars of the Roses?','Lancaster and York','Tudor and Stuart','Norman and Saxon','Wessex and Mercia',0],['Who won the Battle of Hastings in 1066?','Harold Godwinson','William of Normandy','Alfred the Great','Robert the Bruce',1],['What followed the Norman Conquest?','A new ruling elite and land system','The NHS','Universal voting','The Industrial Revolution',0],['Which battle took place in 1066?','Hastings','Waterloo','Bosworth','Agincourt',0],['What was the Domesday Book?','A survey of land and property','A book of royal poems','A law code for Scotland','A list of MPs',0],['Who ordered the Domesday survey?','William the Conqueror','Henry VIII','Elizabeth I','James I',0],['What was the role of a medieval castle?','Defence and administration','A modern factory','A polling station','A hospital service',0],['Which institution grew from the king’s council?','Parliament','The NHS','The BBC','The Supreme Court',0],['What did Magna Carta help establish?','Limits on royal authority','A written modern constitution','Universal suffrage','Devolution',0],['Which king was defeated at Bosworth in 1485?','Richard III','Henry VII','Edward I','John',0],['Who became king after Bosworth?','Henry VII','Henry VIII','James I','Charles I',0],['What was the Wars of the Roses?','A dynastic struggle','A war with Spain','A Viking raid','A crusade',0],['Which plague struck Britain in the 14th century?','Black Death','Spanish flu','Great Plague of 1665','Cholera of 1854',0],['What was a medieval monastery?','A religious community','A parliament','A royal mint','A trading company',0],['Which language was used by many Norman rulers?','French','Welsh','Gaelic','Danish',0],['What was feudalism based on?','Landholding and obligations','Universal elections','Factory ownership','Trade unions',0],['Who was William the Conqueror?','Duke of Normandy who became king','A Tudor explorer','A Scottish poet','A Roman emperor',0],['Which century included the year 1215?','13th','11th','15th','17th',0],['What was a manor in medieval England?','An estate or local unit of land','A parliament building','A navy ship','A university',0],['Why is Magna Carta historically important?','It influenced ideas about lawful government','It created the UK','It ended all wars','It introduced income tax',0]]
 ];
+
+const extraBanksText = [
+[
+"Which explorer led the first English voyage around the world?^Francis Drake^Walter Raleigh^James Cook^John Cabot^0",
+"Which Spanish fleet was defeated by England in 1588?^Spanish Armada^Royal Navy^Dutch fleet^French fleet^0",
+"Who was monarch during the defeat of the Spanish Armada?^Elizabeth I^Mary I^Victoria^Anne^0",
+"Which trading company was founded in 1600?^East India Company^Hudson Bay Company^Royal African Company^Virginia Company^0",
+"Which navigator reached the Americas in 1492?^Christopher Columbus^Francis Drake^James Cook^Walter Raleigh^0",
+"Which explorer charted the east coast of Australia for Britain?^James Cook^John Cabot^Walter Raleigh^Francis Drake^0",
+"What was the main purpose of many early trading companies?^To trade overseas^To elect MPs^To run local courts^To provide the NHS^0",
+"Which Caribbean island was a major British colony?^Jamaica^Iceland^Cyprus^Malta^0",
+"What was the transatlantic slave trade?^Forced transportation and sale of enslaved Africans^Voluntary migration to Europe^Trade in manufactured clocks^A system of voting^0",
+"Who campaigned in Parliament against the slave trade?^William Wilberforce^Robert Walpole^James Watt^Duke of Wellington^0",
+"In what year did Britain abolish its slave trade?^1807^1707^1833^1918^0",
+"When was slavery abolished in most of the British Empire?^1833^1807^1901^1945^0",
+"What was the British Empire?^A group of territories ruled or controlled by Britain^A single European country^A trade union^A political party^0",
+"Which conflict ended with the Battle of Waterloo in 1815?^Napoleonic Wars^Crimean War^First World War^English Civil War^0",
+"Who led the British and allied army at Waterloo?^Duke of Wellington^Admiral Nelson^Oliver Cromwell^Lord Kitchener^0",
+"Which admiral died at the Battle of Trafalgar?^Horatio Nelson^Francis Drake^James Cook^John Jellicoe^0",
+"In which year was the Battle of Trafalgar?^1805^1066^1588^1916^0",
+"What was one effect of the expansion of overseas trade?^Growth of ports and commercial wealth^End of all shipping^Abolition of Parliament^End of farming^0",
+"Which port was strongly associated with the Atlantic slave trade?^Liverpool^Oxford^Cambridge^Inverness^0",
+"What does colonisation generally mean?^Establishing control over another territory^Holding a local election^Building a railway station^Forming a trade union^0",
+"Which British colony became independent in 1947 and was partitioned?^India^Canada^Australia^New Zealand^0",
+"Who was the first European to establish a permanent English settlement in Virginia?^English colonists under the Virginia Company^Julius Caesar^William the Conqueror^Alfred the Great^0",
+"What was the significance of the 1707 Acts of Union?^They united England and Scotland into Great Britain^They united Britain and France^They created the NHS^They ended the monarchy^0",
+"Which monarch was on the throne at the 1707 Union?^Queen Anne^Elizabeth I^Victoria^George VI^0"
+],
+[
+"Which inventor improved the steam engine in the 18th century?^James Watt^Alexander Fleming^Tim Berners-Lee^Charles Babbage^0",
+"Who developed the Spinning Jenny?^James Hargreaves^Richard Arkwright^James Watt^Isambard Brunel^0",
+"What was Richard Arkwright known for?^Developing factory cotton spinning^Discovering penicillin^Inventing television^Designing the telephone^0",
+"Which industry was central to early industrialisation in Britain?^Textiles^Film making^Aircraft production^Computer software^0",
+"What powered many early factories and locomotives?^Steam^Solar panels^Petrol engines^Electric batteries^0",
+"Which engineer built the Great Western Railway and major bridges?^Isambard Kingdom Brunel^Charles Darwin^Michael Faraday^Alexander Graham Bell^0",
+"What was one consequence of factory growth?^More people moved to towns and cities^Everyone moved to farms^Cities disappeared^Trade ended^0",
+"What was urbanisation?^Growth of towns and cities^Decline of all industry^A form of monarchy^A religious festival^0",
+"What did the Factory Acts seek to regulate?^Working conditions in factories^The succession to the throne^Parliamentary elections only^Overseas trade only^0",
+"Which movement protested against some industrial machinery?^Luddites^Jacobites^Chartists^Roundheads^0",
+"What was the purpose of canals during industrialisation?^To transport goods^To hold elections^To provide television^To mark county borders^0",
+"Which fuel was widely used by steam engines?^Coal^Peat only^Uranium^Hydrogen^0",
+"What was the Industrial Revolution?^A major change to manufacturing and transport^A change of royal family^A religious war^A campaign for votes only^0",
+"Which city became famous for cotton manufacturing?^Manchester^Canterbury^St Davids^Stirling^0",
+"What did the 1833 Factory Act restrict?^Employment of young children and working hours^The right to vote^The use of railways^The building of schools^0",
+"Who was associated with the development of the locomotive Rocket?^George Stephenson^James Watt^Richard Arkwright^Charles Darwin^0",
+"What did railways make easier?^Moving people and goods over land^Sending radio broadcasts^Crossing the Atlantic by air^Printing newspapers^0",
+"Which material was essential for many Victorian railway bridges?^Iron^Plastic^Aluminium foil^Concrete only^0",
+"What was a workhouse?^An institution providing accommodation in return for work^A royal palace^A factory for engines^A debating chamber^0",
+"Which reformer investigated poverty and social conditions?^Charles Booth^Francis Drake^Isaac Newton^James Cook^0",
+"What did public health reformers campaign to improve?^Clean water and sanitation^Royal ceremonies^Naval uniforms^The national anthem^0",
+"What was the purpose of trade unions?^To represent workers' interests^To appoint judges^To collect church taxes^To command the navy^0",
+"Which group campaigned for votes for working men in the 19th century?^Chartists^Tudors^Vikings^Jacobites^0",
+"What was the Great Exhibition of 1851 intended to showcase?^Industry, inventions and design^Military battles^Medieval manuscripts only^Parliamentary debates^0"
+],
+[
+"Which monarch began the Victorian era in 1837?^Queen Victoria^Queen Anne^Elizabeth I^Mary I^0",
+"In which year did Queen Victoria die?^1901^1837^1914^1926^0",
+"What was the period of Queen Victoria's reign called?^Victorian era^Tudor era^Georgian era^Edwardian era^0",
+"Who wrote Oliver Twist?^Charles Dickens^William Shakespeare^Jane Austen^Thomas Hardy^0",
+"Who wrote Pride and Prejudice?^Jane Austen^Mary Shelley^Agatha Christie^Virginia Woolf^0",
+"Which scientist proposed evolution by natural selection?^Charles Darwin^Isaac Newton^Alexander Fleming^Michael Faraday^0",
+"Which scientist is associated with the laws of motion and gravity?^Isaac Newton^Charles Darwin^James Watt^Edward Jenner^0",
+"Who developed vaccination against smallpox?^Edward Jenner^Alexander Fleming^Tim Berners-Lee^Francis Crick^0",
+"What was the Crystal Palace associated with?^The Great Exhibition of 1851^The Battle of Waterloo^The 1707 Union^The first World Cup^0",
+"Which nurse became famous for reforming nursing during the Crimean War?^Florence Nightingale^Elizabeth Fry^Emmeline Pankhurst^Mary Seacole^0",
+"Who was Mary Seacole?^A Jamaican-born nurse who cared for soldiers^A queen of England^A scientist who discovered DNA^A Victorian novelist^0",
+"What did the 1870 Education Act do in England and Wales?^Created the framework for elementary schooling^Introduced universal pensions^Founded the NHS^Ended the monarchy^0",
+"What was the purpose of the 1884 Reform Act?^Extending the male vote^Giving votes to all women^Creating the House of Lords^Establishing the BBC^0",
+"Which movement campaigned for women's right to vote?^Suffragettes and suffragists^Chartists only^Jacobites^Luddites^0",
+"Who was a leading suffragette?^Emmeline Pankhurst^Florence Nightingale^Jane Austen^Mary Seacole^0",
+"What did the term 'workhouse' describe?^A place offering shelter in return for work^A university^A royal residence^A railway company^0",
+"Which empire was ruled by Queen Victoria as Empress of India?^British Empire^Roman Empire^Ottoman Empire^Mongol Empire^0",
+"What was one major Victorian transport development?^Expansion of railways^Commercial jet travel^Underground electric cars^Space travel^0",
+"Which building is the official residence of the British monarch in London?^Buckingham Palace^The Tower of London^Hampton Court only^The Palace of Westminster^0",
+"What was the purpose of the Public Health Act 1875?^Improving sanitation and local public health^Giving women the vote^Creating county councils^Abolishing the slave trade^0",
+"Who invented the telephone?^Alexander Graham Bell^James Watt^John Logie Baird^Tim Berners-Lee^0",
+"Which scientist pioneered electromagnetism?^Michael Faraday^Charles Darwin^Edward Jenner^Isaac Newton^0",
+"What was the British Empire at its largest?^A global empire spanning many continents^A union of European republics^A single island state^A trade union^0",
+"Which social issue was highlighted by Victorian reformers?^Poverty and poor housing^Space exploration^Digital privacy^Airline safety^0"
+],
+[
+"Who was Prime Minister for much of the Second World War?^Winston Churchill^Neville Chamberlain^Clement Attlee^Harold Macmillan^0",
+"When did the Second World War end in Europe?^1945^1918^1939^1951^0",
+"What date is celebrated as VE Day?^8 May 1945^11 November 1918^6 June 1944^1 January 1946^0",
+"What does D-Day refer to?^The Allied landings in Normandy in 1944^The end of the First World War^The Battle of Britain^The signing of Magna Carta^0",
+"When did the Battle of Britain take place?^1940^1916^1939^1945^0",
+"What was the Blitz?^German bombing of British towns and cities^A naval victory at Trafalgar^A miners' strike^A post-war election^0",
+"Which organisation evacuated many children from cities during the Second World War?^Government evacuation scheme^The NHS^The BBC^The United Nations^0",
+"What was rationing during wartime?^Limits on the amount of certain goods people could buy^Free travel for everyone^A system of military ranks^A type of election^0",
+"When did the First World War end?^11 November 1918^8 May 1945^6 June 1944^1 September 1939^0",
+"What is Remembrance Day observed on?^11 November^5 November^1 March^25 December^0",
+"What is the Cenotaph in Whitehall associated with?^Remembrance of the war dead^The coronation^The opening of Parliament^The Great Fire^0",
+"Who was the first woman to serve as UK Prime Minister?^Margaret Thatcher^Theresa May^Queen Victoria^Barbara Castle^0",
+"Who became Prime Minister in 1945 after the general election?^Clement Attlee^Winston Churchill^Anthony Eden^Harold Wilson^0",
+"What major public service was founded in 1948?^National Health Service^BBC^Royal Mail^Metropolitan Police^0",
+"What was the post-war welfare state intended to provide?^Social support and public services^A larger empire^A return to feudalism^Private armies^0",
+"When was the NHS established?^1948^1918^1939^1969^0",
+"What was the Cold War?^Political and military tension between Western powers and the Soviet bloc^A war fought in Antarctica^The English Civil War^A conflict between Tudor houses^0",
+"Which organisation was founded in 1945 to promote international peace?^United Nations^League of Nations in 1945^NATO in 1918^European Parliament^0",
+"When did women in the UK gain equal voting rights with men at age 21?^1928^1918^1832^1945^0",
+"What did the Representation of the People Act 1918 do?^Gave the vote to some women and extended male suffrage^Gave all adults equal votes at 18^Created the NHS^Ended the First World War^0",
+"When did the UK join the European Economic Community?^1973^1945^1957^1992^0",
+"When did the UK vote to leave the European Union?^2016^1973^1997^2020^0",
+"When did the UK formally leave the European Union?^2020^2016^2019^2022^0",
+"What was the Battle of Britain fought mainly in?^The air^The English Channel only^The trenches in France^The North Sea^0"
+],
+[
+"What is the UK Parliament made up of?^House of Commons, House of Lords and the monarch^Prime Minister and Cabinet only^Supreme Court and police^Councils and assemblies^0",
+"Where does the House of Commons meet?^Palace of Westminster^Buckingham Palace^Windsor Castle^The Supreme Court^0",
+"How are MPs elected?^By voters in parliamentary constituencies^Appointed by the monarch^Chosen by judges^Selected by the House of Lords^0",
+"What is the main role of the House of Commons?^Debating and making laws and scrutinising government^Running local hospitals^Appointing all judges^Commanding the armed forces directly^0",
+"Who usually forms the government after a general election?^The party or group able to command Commons confidence^The largest trade union^The House of Lords^The Supreme Court^0",
+"What is the Cabinet?^Senior government ministers^All MPs^The monarch's family^The leaders of local councils^0",
+"What is the role of the Prime Minister?^Leading the government^Presiding over every court case^Leading the opposition^Chairing the House of Lords^0",
+"Who is the official chair of debates in the House of Commons?^The Speaker^The Prime Minister^The monarch^The Lord Chief Justice^0",
+"What is the role of the Speaker?^Keeping order and ensuring rules are followed in Commons debates^Choosing the Cabinet^Leading the police^Appointing bishops^0",
+"What is the House of Lords?^The second chamber of Parliament^The elected local council^The highest criminal court^The monarch's private office^0",
+"How are most members of the House of Lords appointed?^They are appointed^They are elected by every adult^They inherit every seat^They are chosen by local councils^0",
+"What is a constituency?^An area represented by an elected MP^A government department^A court district only^A parliamentary committee^0",
+"How often must a UK general election normally take place at most?^Every five years^Every two years^Every seven years^Every ten years^0",
+"What is a by-election?^An election to fill a vacant parliamentary seat^A vote on a new monarch^A local census^A vote in the House of Lords^0",
+"What is the opposition?^Parties not forming the government that scrutinise it^The Cabinet^The civil service^The judiciary^0",
+"What is a manifesto?^A political party's statement of policies^A court judgment^A royal proclamation^A local tax bill^0",
+"What is the civil service expected to do?^Support the government impartially^Campaign for one political party^Decide court verdicts^Elect MPs^0",
+"What is a parliamentary committee used for?^Examining issues and scrutinising policy^Replacing general elections^Appointing the monarch^Running the NHS directly^0",
+"What is a bill?^A proposal for a new law^A final court sentence^A party membership card^A local council meeting^0",
+"What happens when a bill completes the required parliamentary stages and receives Royal Assent?^It becomes an Act of Parliament^It is automatically rejected^It becomes a court appeal^It dissolves Parliament^0",
+"What is the monarch's constitutional role in Parliament?^Formal part of Parliament, including Royal Assent^Choosing every MP^Writing the government budget alone^Chairing the Supreme Court^0",
+"What is Prime Minister's Questions?^A weekly Commons session when MPs question the Prime Minister^A public referendum^A court hearing^A Cabinet election^0",
+"What is a coalition government?^A government formed by two or more parties working together^A government run by judges^A local council^A government without MPs^0",
+"What does scrutinise government mean?^Examine and question its decisions^Automatically approve all policies^Choose the monarch^Run constituency surgeries^0"
+]
+];
+const extraBanks = extraBanksText.map(bank=>bank.map(line=>{const p=line.split("^");return [p[0],p[1],p[2],p[3],p[4],Number(p[5])]}));
 const extraFacts=[
 ['Which monarch broke with Rome and established royal supremacy over the English Church?','Henry VIII','James I','Charles II','George III',0],
 ['Which queen reigned during the Spanish Armada of 1588?','Mary I','Elizabeth I','Victoria','Anne',1],
@@ -48,11 +182,12 @@ const $=id=>document.getElementById(id);function save(){localStorage.setItem(key
 function renderLevels(){ $('levels').innerHTML='';titles.forEach((t,i)=>{let unlocked=i===0||progress.passed.includes(i-1)||progress.passed.includes(i);let b=document.createElement('button');b.className='level '+(i===progress.passed.length?'current':'')+(!unlocked?' locked':'');b.disabled=!unlocked;b.innerHTML='<small>LEVEL '+(i+1)+'</small><strong>'+t+'</strong><span class="status">'+(progress.passed.includes(i)?labels.passed:unlocked?labels.start:labels.locked)+'</span>';b.onclick=()=>start(i);$('levels').appendChild(b)});$('passed').textContent=progress.passed.length}
 function start(n){level=n;idx=0;chosen={};seconds=1500;questions=makeQuestions(n);if(questions.length!==24){alert('This level is still being prepared. Please choose a fully prepared level.');return}$('result').classList.add('hidden');$('quiz').classList.remove('hidden');$('levels').classList.add('hidden');renderQ();clearInterval(clock);clock=setInterval(()=>{seconds--;timer();if(seconds<=0){clearInterval(clock);finish(true)}},1000)}
 function makeQuestions(n){
- // Only the first three banks are fully authored at this stage.
- if(n>2)return [];
- const source=(topics[n]||[]).map(q=>q.slice());
+ const bank=n<3?topics[n]:extraBanks[n-3];
+ if(!bank||bank.length!==24)return [];
+ const source=bank.map(q=>q.slice());
  const seen=new Set();
- return source.filter(q=>{if(seen.has(q[0]))return false;seen.add(q[0]);return true}).slice(0,24);
+ const unique=source.filter(q=>{if(seen.has(q[0]))return false;seen.add(q[0]);return true});
+ return unique.length===24?unique:[];
 }
 function timer(){$('timer').textContent=String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0')}
 function renderQ(){let q=questions[idx];$('levelName').textContent='LEVEL '+(level+1)+' — '+titles[level];$('counter').textContent='Question '+(idx+1)+' of 24';$('q').textContent=q[0];$('bar').style.width=((idx+1)/24*100)+'%';$('answers').innerHTML='';q.slice(1,5).forEach((a,i)=>{let b=document.createElement('button');let answered=chosen[idx]!==undefined;b.className='answer'+(answered&&i===q[5]?' correct':'')+(answered&&chosen[idx]===i&&i!==q[5]?' wrong':'')+(answered&&chosen[idx]===i?' selected':'');b.innerHTML='<b>'+String.fromCharCode(65+i)+'</b><span></span>';b.querySelector('span').textContent=a;b.disabled=answered;b.onclick=()=>{if(chosen[idx]===undefined){chosen[idx]=i;renderQ()}};$('answers').appendChild(b)});let fb=$('feedback');if(chosen[idx]!==undefined){let right=chosen[idx]===q[5];fb.className='feedback'+(right?'':' bad');fb.textContent=right?labels.correct:labels.wrong+' '+String.fromCharCode(65+q[5])+'. '+q[q[5]+1]}else{fb.className='feedback hidden';fb.textContent=''}$('next').disabled=chosen[idx]===undefined;$('next').textContent=idx===23?'Finish test →':'Next question →';timer()}
