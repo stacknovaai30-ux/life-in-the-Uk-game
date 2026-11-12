@@ -48,11 +48,11 @@ const $=id=>document.getElementById(id);function save(){localStorage.setItem(key
 function renderLevels(){ $('levels').innerHTML='';titles.forEach((t,i)=>{let unlocked=i===0||progress.passed.includes(i-1)||progress.passed.includes(i);let b=document.createElement('button');b.className='level '+(i===progress.passed.length?'current':'')+(!unlocked?' locked':'');b.disabled=!unlocked;b.innerHTML='<small>LEVEL '+(i+1)+'</small><strong>'+t+'</strong><span class="status">'+(progress.passed.includes(i)?labels[lang].passed:unlocked?labels[lang].start:labels[lang].locked)+'</span>';b.onclick=()=>start(i);$('levels').appendChild(b)});$('passed').textContent=progress.passed.length}
 function start(n){level=n;idx=0;chosen={};seconds=1500;questions=makeQuestions(n);if(questions.length!==24){alert('This level is still being prepared. Please choose a fully prepared level.');return}$('result').classList.add('hidden');$('quiz').classList.remove('hidden');$('levels').classList.add('hidden');renderQ();clearInterval(clock);clock=setInterval(()=>{seconds--;timer();if(seconds<=0){clearInterval(clock);finish(true)}},1000)}
 function makeQuestions(n){
- const curated=[...topics.slice(0,3),...Array.from({length:17},(_,i)=>extraFacts.map((q,j)=>q.slice()))];
- let source=curated[n]||[];
- // Keep the selected level's question order stable; never silently recycle a question from another level.
- const seen=new Set();source=source.filter(q=>{if(seen.has(q[0]))return false;seen.add(q[0]);return true});
- return source.slice(0,24);
+ // Only the first three banks are fully authored at this stage.
+ if(n>2)return [];
+ const source=(topics[n]||[]).map(q=>q.slice());
+ const seen=new Set();
+ return source.filter(q=>{if(seen.has(q[0]))return false;seen.add(q[0]);return true}).slice(0,24);
 }
 function timer(){$('timer').textContent=String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0')}
 function renderQ(){let q=questions[idx];$('levelName').textContent='LEVEL '+(level+1)+' — '+titles[level];$('counter').textContent='Question '+(idx+1)+' of 24';$('q').textContent=q[0];$('bar').style.width=((idx+1)/24*100)+'%';$('answers').innerHTML='';q.slice(1,5).forEach((a,i)=>{let b=document.createElement('button');b.className='answer'+(chosen[idx]===i?' selected':'');b.innerHTML='<b>'+String.fromCharCode(65+i)+'</b><span></span>';b.querySelector('span').textContent=a;b.onclick=()=>{chosen[idx]=i;renderQ()};$('answers').appendChild(b)});$('next').disabled=chosen[idx]===undefined;$('next').textContent=idx===23?'Finish test →':'Next question →';timer()}
