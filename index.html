@@ -444,6 +444,64 @@ const finalBanksText = [
 ]
 ];
 const finalBanks = finalBanksText.map(bank=>bank.map(line=>{const p=line.split("^");return [p[0],p[1],p[2],p[3],p[4],Number(p[5])]}));
+
+const missingBanksText = [
+[
+"What is the usual emergency telephone number in the UK?^999^101^111^123^0",
+"Which number can you call for urgent medical advice when it is not a life-threatening emergency in England?^111^999^101^112^0",
+"What is the usual non-emergency police number in England and Wales?^101^999^111^112^0",
+"What is the purpose of a GP surgery?^To provide primary medical care^To hear criminal trials^To issue passports^To collect council tax^0",
+"What should you do to register with a GP?^Contact a local GP practice and follow its registration process^Apply to the House of Commons^Ask the police to register you^Wait until you are ill^0",
+"What is the purpose of a dentist?^To care for teeth and oral health^To prescribe driving licences^To investigate crimes^To teach at university^0",
+"What is a library card used for?^Borrowing books and other library resources^Voting in general elections^Paying income tax^Entering court buildings^0",
+"What is a leisure centre?^A facility for sport and physical activities^A government department^A court building^A tax office^0",
+"What is the purpose of a residents' association?^Representing local residents' interests^Appointing MPs^Running the national police^Making criminal law^0",
+"What is a food hygiene rating intended to show?^Standards of food hygiene at a food business^The price of a meal^The number of employees^The restaurant's opening hours^0",
+"What should a tenant normally do about a serious repair issue?^Contact the landlord or managing agent^Stop paying all taxes^Change the locks without notice^Contact the Prime Minister^0",
+"What is a deposit protection scheme for?^Protecting tenants' deposits in eligible assured shorthold tenancies in England and Wales^Protecting a landlord's car^Paying council tax^Funding a court case^0",
+"What is a credit score used for?^Helping lenders assess credit risk^Choosing a person's MP^Setting school grades^Determining nationality^0",
+"What is direct debit?^An instruction allowing an organisation to collect payments from a bank account^A cash payment at a shop^A court order^A type of pension^0",
+"What is online banking?^Managing bank accounts using the internet^Applying for a passport in person^Registering to vote^Attending a court hearing^0",
+"What should you do if you suspect an online scam?^Do not share details and report it to the relevant bank or authority^Send more money to verify it^Share your password^Ignore all account warnings^0",
+"What is the purpose of a recycling collection?^Collecting materials to be recycled^Collecting income tax^Registering births^Delivering court papers^0",
+"What does a blue badge help eligible people do?^Park closer to destinations under the scheme rules^Travel free on every flight^Avoid all road laws^Use bus lanes anywhere^0",
+"What is a school parent-teacher meeting for?^Discussing a child's learning and progress^Electing MPs^Setting national tax rates^Applying for citizenship^0",
+"What is an apprenticeship?^Training that combines paid work and study^A university entrance exam^A retirement payment^A court sentence^0",
+"What is the purpose of a CV?^Summarising a person's education, skills and work experience^Recording a person's criminal sentence^Registering a marriage^Applying for a driving test only^0",
+"What is a job interview?^A meeting to assess suitability for a job^A meeting of the Cabinet^A court appeal^A local election^0",
+"What does annual leave mean for an employee?^Paid time off work^Unpaid tax^A pension contribution^A criminal conviction^0",
+"What is the purpose of a payslip?^Showing pay and deductions^Showing voting records^Showing medical history^Showing school attendance^0"
+],
+[
+"Which document sets out the official rules and topics for the Life in the UK test?^The official handbook Life in the United Kingdom: A Guide for New Residents^A local council newsletter^A driving theory handbook^A newspaper supplement^0",
+"What is the pass mark for the Life in the UK test?^75 percent (18 out of 24)^50 percent (12 out of 24)^80 percent (20 out of 24)^100 percent (24 out of 24)^0",
+"How many questions are in the Life in the UK test?^24^20^30^40^0",
+"How long is the official Life in the UK test?^45 minutes^25 minutes^60 minutes^90 minutes^0",
+"What type of questions are asked in the Life in the UK test?^Multiple-choice questions^Essay questions^Spoken language interview only^Practical driving questions^0",
+"What is the main purpose of the Life in the UK test?^To assess knowledge of life, history, government and society in the UK^To test driving skills^To assess English speaking only^To assess professional qualifications^0",
+"Which document should candidates study for the test?^The current official Life in the UK handbook^Any social media quiz^A historical novel only^A travel guide only^0",
+"Which of these is a fundamental British value?^Democracy^Rule by one unelected person^Religious intolerance^Censorship of all opinions^0",
+"What does democracy mean?^People have a say in how they are governed^The army chooses every law^Judges elect the government^The monarch rules without Parliament^0",
+"What is the UK's national legislature called?^UK Parliament^The Cabinet Office^The Supreme Court^The Civil Service^0",
+"What is the capital of the UK?^London^Cardiff^Edinburgh^Belfast^0",
+"Which event took place in 1066?^The Norman Conquest^The Battle of Waterloo^The Act of Union^The Great Fire of London^0",
+"In which year was Magna Carta sealed?^1215^1066^1485^1707^0",
+"Who was the monarch when the Spanish Armada was defeated?^Elizabeth I^Victoria^Anne^Mary II^0",
+"When was the NHS established?^1948^1918^1939^1965^0",
+"Who discovered penicillin?^Alexander Fleming^Edward Jenner^Isaac Newton^Charles Darwin^0",
+"Who invented the World Wide Web?^Tim Berners-Lee^Alan Turing^Charles Babbage^Alexander Graham Bell^0",
+"What is the role of an MP?^Representing constituents in Parliament^Presiding over every court^Leading the police^Appointing the monarch^0",
+"What does the rule of law mean?^Everyone is subject to the law^Only visitors obey the law^Ministers are above the law^Courts are controlled by parties^0",
+"What is the national day of Wales?^St David's Day on 1 March^St George's Day on 23 April^St Andrew's Day on 30 November^St Patrick's Day on 17 March^0",
+"What is the national day of Scotland?^St Andrew's Day on 30 November^St David's Day on 1 March^St George's Day on 23 April^St Patrick's Day on 17 March^0",
+"What is the national day of England?^St George's Day on 23 April^St Andrew's Day on 30 November^St David's Day on 1 March^St Patrick's Day on 17 March^0",
+"What is the national day of Northern Ireland associated with?^St Patrick's Day on 17 March^St George's Day on 23 April^St Andrew's Day on 30 November^St David's Day on 1 March^0",
+"Which body provides publicly funded healthcare in the UK?^The National Health Service^The Bank of England^The House of Lords^The Electoral Commission^0"
+]
+];
+const missingBanks = missingBanksText.map(bank=>bank.map(line=>{const p=line.split("^");return [p[0],p[1],p[2],p[3],p[4],Number(p[5])]}));
+moreBanks.push(missingBanks[0]);
+finalBanks.push(missingBanks[1]);
 const labels={correct:"Correct! Well done.",wrong:"Not quite. The correct answer is:",start:"Start level",passed:"Passed ✓",locked:"Locked",retry:"Try again",next:"Next level unlocked!",complete:"Level complete",failed:"Not quite — you need 24/24.",time:"Time is up. Try this level again.",exit:"Exit test",nextQ:"Next question",finish:"Finish test",pass:"You passed!",back:"Back to levels",score:"Your score",intro:"Twenty levels. Twenty-four questions each. Get every answer right to unlock the next level. Progress is saved on this device."};
 const key='lituk.quest.progress.v1';let progress={passed:[]};try{progress=JSON.parse(localStorage.getItem(key))||progress}catch(e){}let level=0,idx=0,chosen={},seconds=1500,clock=null,questions=[];
 const $=id=>document.getElementById(id);function save(){localStorage.setItem(key,JSON.stringify(progress));$('passed').textContent=progress.passed.length}
