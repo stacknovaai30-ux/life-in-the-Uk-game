@@ -176,13 +176,121 @@ const extraFacts=[
 ['Which movement campaigned for political rights for working people in the 19th century?','Chartism','Jacobitism','Luddism only','Roundheads',0],
 ['What did the 19th-century public health reforms aim to improve?','Sanitation and living conditions','Royal succession','Naval uniforms','Voting age only',0]
 ];
+
+const moreBanksText = [
+[
+"Which UK country has its own Parliament at Holyrood?^Scotland^Wales^Northern Ireland^England^0",
+"Where is the Scottish Parliament?^Edinburgh^Glasgow^Aberdeen^Inverness^0",
+"Where is the Senedd located?^Cardiff^Swansea^Newport^Bangor^0",
+"What is the Welsh Parliament called?^Senedd Cymru^Holyrood^Stormont^Westminster^0",
+"Where does the Northern Ireland Assembly meet?^Stormont^Holyrood^Cardiff Bay^Westminster^0",
+"What is devolution?^Transfer of some powers from the UK Parliament to nations or regions^Abolition of local government^The election of the monarch^A system of taxation only^0",
+"Which matters are generally reserved to the UK Parliament?^Defence and foreign affairs^School term dates in Scotland^Local bus routes^Most local planning decisions^0",
+"Which government is responsible for the NHS in Scotland?^Scottish Government^UK Government only^Welsh Government^Local councils only^0",
+"What is the First Minister?^Head of a devolved government^Speaker of the Commons^Leader of the opposition at Westminster^The monarch's representative^0",
+"What is the Northern Ireland Executive?^The devolved government of Northern Ireland^The UK Cabinet^A court^A local police force^0",
+"Which agreement helped establish power-sharing in Northern Ireland in 1998?^Belfast (Good Friday) Agreement^Act of Union 1707^Treaty of Versailles^Magna Carta^0",
+"What is the purpose of power-sharing in Northern Ireland?^To include different political communities in government^To abolish elections^To transfer all powers to councils^To replace the Assembly with courts^0",
+"What is a local council responsible for?^Local services such as rubbish collection and planning^Foreign policy^The armed forces^Immigration law^0",
+"What is a councillor?^An elected member of a local council^An MP in the House of Lords^A judge^A civil servant^0",
+"Who can vote in Scottish Parliament elections?^Eligible voters registered in Scotland^Only MPs^Only UK-born residents^Only members of political parties^0",
+"Which body represents people at UK-wide level?^UK Parliament^A parish council^A school board^A local NHS trust^0",
+"What is the role of the UK Government?^Running national policy in areas not devolved^Running every local library^Appointing all councillors^Deciding every school exam^0",
+"What does a devolved legislature do?^Makes laws in areas devolved to it^Commands the UK armed forces^Appoints the monarch^Runs the House of Lords^0",
+"Which part of the UK does not have a separate devolved national legislature?^England^Scotland^Wales^Northern Ireland^0",
+"What is the purpose of the Barnett formula?^It helps determine public spending allocations to devolved administrations^It selects MPs^It sets interest rates^It appoints judges^0",
+"Who is the head of state of the UK?^The monarch^The Prime Minister^The Speaker^The First Minister of Scotland^0",
+"What is the difference between head of state and head of government?^The head of state represents the state; the head of government leads government^They always mean the same person^The head of government is always a judge^The head of state runs local councils^0",
+"What is a referendum?^A direct public vote on a particular question^A vote by MPs only^A court appeal^A local council budget^0",
+"Which referendum took place in the UK in 2014?^Scottish independence referendum^EU membership referendum^Voting system referendum only^Welsh language referendum^0"
+],
+[
+"Which court generally hears serious criminal cases in England and Wales?^Crown Court^County Court^Family Court^Magistrates' Court only^0",
+"Which court usually deals with less serious criminal offences in England and Wales?^Magistrates' Court^Crown Court^Supreme Court^Court of Appeal^0",
+"What is the role of a jury in a Crown Court trial?^Decide whether the defendant is guilty^Choose the sentence in every case^Write the law^Appoint the judge^0",
+"What is the role of a judge?^Ensure the law is followed and manage the trial^Investigate every crime personally^Choose the jury's verdict^Make party manifestos^0",
+"What does the rule of law mean?^Everyone is subject to the law^Only citizens must obey the law^Ministers are above the law^Courts may ignore legislation^0",
+"What is the purpose of the police?^Prevent and investigate crime and protect the public^Make laws in Parliament^Decide court sentences^Collect income tax^0",
+"What is the Crown Prosecution Service responsible for?^Prosecuting criminal cases in England and Wales^Running prisons in Scotland^Appointing judges^Making laws^0",
+"What is a solicitor?^A legal professional who advises clients and handles legal matters^A police officer^A juror^A prison governor^0",
+"What is a barrister traditionally known for?^Advocacy and specialist legal advice^Collecting council tax^Investigating crimes^Registering births^0",
+"What is the Supreme Court of the UK?^The UK's final court of appeal for many civil and criminal cases^The main trial court for all crimes^A parliamentary chamber^A police headquarters^0",
+"What is a civil case usually about?^Disputes between individuals or organisations^A criminal prosecution only^A general election^A military operation^0",
+"What is a criminal offence?^An act prohibited by criminal law^A disagreement over a private contract only^A council meeting^A parliamentary question^0",
+"What is the purpose of a prison sentence?^Punishment and public protection, with rehabilitation where possible^To decide who may vote^To replace the courts^To collect taxes^0",
+"What is probation?^Supervision and support for offenders in the community^A type of jury^A police interview^A parliamentary procedure^0",
+"What is the legal age of criminal responsibility in England and Wales?^10^8^12^16^0",
+"What should you do if you are called for jury service?^Attend unless legally excused or deferred^Ignore the letter^Ask an MP to decide the verdict^Pay someone to attend instead^0",
+"What is a witness expected to do in court?^Give truthful evidence^Choose the sentence^Write the verdict before trial^Represent the judge^0",
+"What is domestic violence?^Abuse or controlling behaviour within a family or intimate relationship^A disagreement in Parliament^A minor parking offence^A civil election^0",
+"What is the purpose of the Equality Act 2010?^Protect people from discrimination in specified areas^Set the national minimum wage only^Create the NHS^Establish the House of Lords^0",
+"What does 'innocent until proven guilty' mean?^A person is presumed innocent unless guilt is established^Police decide guilt permanently^A defendant must prove innocence in every case^Juries cannot hear evidence^0",
+"What is legal aid?^Public funding for legal advice or representation for eligible people^A payment to jurors^A police grant^A court fine^0",
+"What is the role of the Legal Ombudsman?^Investigate complaints about legal service providers^Hear murder trials^Appoint MPs^Run prisons^0",
+"What is a magistrate?^A trained volunteer or legally qualified judicial office-holder who hears cases^A member of the Cabinet^A police detective^A local councillor only^0",
+"Why are courts independent?^To decide cases fairly without improper influence^To follow instructions from political parties^To replace Parliament^To collect taxes^0"
+],
+[
+"What is GDP commonly used to measure?^The value of goods and services produced in an economy^The number of MPs^The size of the armed forces^The population of a city^0",
+"What is inflation?^A general rise in prices over time^A fall in all wages^An increase in exports only^A reduction in population^0",
+"What is the Bank of England responsible for?^Monetary policy and financial stability^Running local councils^Collecting council tax^Setting school curriculums^0",
+"What is the UK's currency?^Pound sterling^Euro^US dollar^Swiss franc^0",
+"What is income tax?^A tax on income^A tax on imported goods only^A tax on house purchases only^A council service^0",
+"What is VAT?^A tax on many goods and services^A tax on wages only^A tax on inheritances only^A pension payment^0",
+"What is National Insurance used to help fund?^Certain state benefits and the NHS^The monarchy's private expenses^Local football clubs^The House of Lords^0",
+"What is the minimum wage intended to do?^Set a legal minimum hourly rate for eligible workers^Set a maximum salary^Guarantee every person a job^Replace income tax^0",
+"What is a trade union?^An organisation that represents workers^A political court^A government department^A bank^0",
+"What is a payslip?^A record showing pay and deductions^A tax return for a business^A job application^A pension certificate^0",
+"What is self-employment?^Working for yourself rather than as an employee^Working only for government^Being unemployed^Working without pay^0",
+"What is a pension?^Income paid after retirement or under a pension scheme^A tax on shopping^A student loan^A court fine^0",
+"What is the State Pension?^A regular payment for people who meet age and qualifying conditions^A payment to every child^A private company bonus^A housing tax^0",
+"What is a National Minimum Wage rate?^The legal minimum hourly pay for eligible workers^The average UK salary^A maximum weekly pension^A rate set by each employer freely^0",
+"What does a payslip normally show?^Gross pay, deductions and take-home pay^Voting history^Medical records^School grades^0",
+"What is council tax generally used to help pay for?^Local services^Foreign embassies^The armed forces^Parliamentary elections^0",
+"What is a mortgage?^A loan used to buy property^A type of pension^A tax refund^A rental deposit only^0",
+"What is a tenancy agreement?^A contract between landlord and tenant^A contract for a job^A driving licence^A court summons^0",
+"What is consumer protection?^Rules protecting people when buying goods and services^A tax on savings^A type of election^A police rank^0",
+"What is the purpose of a budget?^Plan income and spending^Choose a jury^Register a birth^Set a court verdict^0",
+"What does unemployment mean?^Being without a job while seeking and available for work^Retiring after a long career^Working part-time^Studying at university^0",
+"What is a credit union?^A member-owned financial co-operative^A government court^A trade union for MPs^A local council^0",
+"What is charitable giving?^Donating money or goods to support a cause^Paying a parking fine^Buying shares^Paying VAT^0",
+"What is the purpose of the Competition and Markets Authority?^Promote competition and protect consumers^Set school holidays^Run the NHS^Manage elections^0"
+],
+[
+"What does freedom of speech allow?^People to express opinions within the law^People to threaten anyone without consequence^People to ignore court orders^People to publish private data freely^0",
+"What does freedom of religion include?^The right to practise a faith or have no religion^A requirement to follow one religion^A ban on changing beliefs^A duty to attend worship^0",
+"What is discrimination?^Unfair treatment because of a protected characteristic^Any disagreement^A normal election^A form of taxation^0",
+"Which law protects people from discrimination in many areas?^Equality Act 2010^Magna Carta only^Act of Union 1707^Factory Act 1833^0",
+"What is a responsibility of everyone living in the UK?^Obey the law^Vote in every election^Join a political party^Own a home^0",
+"What is a responsibility of a person called for jury service?^Attend and consider the evidence fairly^Choose a political party^Write new laws^Investigate the police^0",
+"What does tolerance mean in a diverse society?^Respecting people with different beliefs and backgrounds^Agreeing with every opinion^Avoiding all contact with others^Following one religion^0",
+"What is volunteering?^Giving time to help others without being paid^Working illegally^A type of tax^A court sentence^0",
+"Why is voting important in a democracy?^It lets eligible people help choose representatives^It appoints judges directly^It replaces Parliament^It guarantees a particular result^0",
+"What is a petition?^A formal request signed by people supporting a cause^A court sentence^A tax bill^A political party's accounts^0",
+"What is a peaceful protest?^A lawful way to express disagreement publicly^An act of violence^A court hearing^A general election^0",
+"What is a trade union member entitled to do?^Seek representation and support under union rules^Ignore employment law^Choose judges^Appoint ministers^0",
+"What does equality before the law mean?^The law applies to everyone^Only wealthy people are subject to law^Ministers cannot be prosecuted^Different rules apply to every voter^0",
+"What is a human right?^A basic right or freedom belonging to people^A privilege only for MPs^A type of tax^A local council service^0",
+"What does the Human Rights Act 1998 do?^Gives effect in UK law to rights in the European Convention on Human Rights^Creates the NHS^Sets the minimum wage^Establishes the monarchy^0",
+"What is the right to a fair trial?^A case should be heard fairly by an independent court^A defendant can choose the verdict^Trials must always be public votes^Police decide the sentence^0",
+"What is a conflict of interest?^A situation where personal interests could improperly influence duties^A disagreement between two voters^A court appeal^A local election^0",
+"What is community participation?^Taking part in local activities and helping the community^Avoiding all public life^Refusing to follow laws^Only paying taxes^0",
+"What is the purpose of a school governing body?^Provide oversight and strategic direction for a school^Run criminal courts^Set national defence policy^Appoint MPs^0",
+"What should you do if you see an emergency?^Call 999 when urgent help is needed^Call 101 for every emergency^Wait several days^Contact the tax office^0",
+"What is the non-emergency police number in England, Wales and Scotland?^101^999^111^112 only^0",
+"What is the NHS 111 service used for?^Urgent medical advice when it is not a life-threatening emergency^Reporting a burglary^Calling the fire service^Applying for a passport^0",
+"What is the purpose of safeguarding?^Protecting children and vulnerable adults from harm^Collecting taxes^Running elections^Setting court fees^0",
+"What does civic duty mean?^Responsibilities people have as members of a community^A type of business loan^A royal ceremony^A sports competition^0"
+]
+];
+const moreBanks = moreBanksText.map(bank=>bank.map(line=>{const p=line.split("^");return [p[0],p[1],p[2],p[3],p[4],Number(p[5])]}));
 const labels={correct:"Correct! Well done.",wrong:"Not quite. The correct answer is:",start:"Start level",passed:"Passed ✓",locked:"Locked",retry:"Try again",next:"Next level unlocked!",complete:"Level complete",failed:"Not quite — you need 24/24.",time:"Time is up. Try this level again.",exit:"Exit test",nextQ:"Next question",finish:"Finish test",pass:"You passed!",back:"Back to levels",score:"Your score",intro:"Twenty levels. Twenty-four questions each. Get every answer right to unlock the next level. Progress is saved on this device."};
 const key='lituk.quest.progress.v1';let progress={passed:[]};try{progress=JSON.parse(localStorage.getItem(key))||progress}catch(e){}let level=0,idx=0,chosen={},seconds=1500,clock=null,questions=[];
 const $=id=>document.getElementById(id);function save(){localStorage.setItem(key,JSON.stringify(progress));$('passed').textContent=progress.passed.length}
 function renderLevels(){ $('levels').innerHTML='';titles.forEach((t,i)=>{let unlocked=i===0||progress.passed.includes(i-1)||progress.passed.includes(i);let b=document.createElement('button');b.className='level '+(i===progress.passed.length?'current':'')+(!unlocked?' locked':'');b.disabled=!unlocked;b.innerHTML='<small>LEVEL '+(i+1)+'</small><strong>'+t+'</strong><span class="status">'+(progress.passed.includes(i)?labels.passed:unlocked?labels.start:labels.locked)+'</span>';b.onclick=()=>start(i);$('levels').appendChild(b)});$('passed').textContent=progress.passed.length}
 function start(n){level=n;idx=0;chosen={};seconds=1500;questions=makeQuestions(n);if(questions.length!==24){alert('This level is still being prepared. Please choose a fully prepared level.');return}$('result').classList.add('hidden');$('quiz').classList.remove('hidden');$('levels').classList.add('hidden');renderQ();clearInterval(clock);clock=setInterval(()=>{seconds--;timer();if(seconds<=0){clearInterval(clock);finish(true)}},1000)}
 function makeQuestions(n){
- const bank=n<3?topics[n]:extraBanks[n-3];
+ const bank=n<3?topics[n]:n<8?extraBanks[n-3]:moreBanks[n-8];
  if(!bank||bank.length!==24)return [];
  const source=bank.map(q=>q.slice());
  const seen=new Set();
