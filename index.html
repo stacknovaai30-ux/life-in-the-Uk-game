@@ -513,7 +513,12 @@ function makeQuestions(n){
  const source=bank.map(q=>q.slice());
  const seen=new Set();
  const unique=source.filter(q=>{if(seen.has(q[0]))return false;seen.add(q[0]);return true});
- return unique.length===24?unique:[];
+ if(unique.length!==24)return [];
+ return unique.map(q=>{
+  const options=q.slice(1,5).map((answer,i)=>({answer,correct:i===q[5]}));
+  for(let i=options.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[options[i],options[j]]=[options[j],options[i]];}
+  return [q[0],...options.map(o=>o.answer),options.findIndex(o=>o.correct)];
+ });
 }
 function timer(){$('timer').textContent=String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0')}
 function renderQ(){let q=questions[idx];$('levelName').textContent='LEVEL '+(level+1)+' — '+titles[level];$('counter').textContent='Question '+(idx+1)+' of 24';$('q').textContent=q[0];$('bar').style.width=((idx+1)/24*100)+'%';$('answers').innerHTML='';q.slice(1,5).forEach((a,i)=>{let b=document.createElement('button');let answered=chosen[idx]!==undefined;b.className='answer'+(answered&&i===q[5]?' correct':'')+(answered&&chosen[idx]===i&&i!==q[5]?' wrong':'')+(answered&&chosen[idx]===i?' selected':'');b.innerHTML='<b>'+String.fromCharCode(65+i)+'</b><span></span>';b.querySelector('span').textContent=a;b.disabled=answered;b.onclick=()=>{if(chosen[idx]===undefined){chosen[idx]=i;renderQ()}};$('answers').appendChild(b)});let fb=$('feedback');if(chosen[idx]!==undefined){let right=chosen[idx]===q[5];fb.className='feedback'+(right?'':' bad');fb.textContent=right?labels.correct:labels.wrong+' '+String.fromCharCode(65+q[5])+'. '+q[q[5]+1]}else{fb.className='feedback hidden';fb.textContent=''}$('next').disabled=chosen[idx]===undefined;$('next').textContent=idx===23?'Finish test →':'Next question →';timer()}
